@@ -20,6 +20,9 @@ func FirstLetterToLower(s string) string {
 	return s
 }
 
+// 单词边界有两种
+// 1. 非大写字符，且下一个是大写字符
+// 2. 大写字符，且下一个是大写字符，且下下一个是非大写字符
 func CamelToSnake(str string) string {
 	var slice []string
 	start := 0
